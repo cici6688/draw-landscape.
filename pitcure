@@ -1,0 +1,88 @@
+import turtle
+
+# create a turtle object
+t = turtle.Turtle()
+
+# set the background color
+turtle.bgcolor("sky blue")
+
+# draw the ground
+t.color("green")
+t.penup()
+t.goto(-300, -100)
+t.pendown()
+t.begin_fill()
+t.goto(300, -100)
+t.goto(300, -200)
+t.goto(-300, -200)
+t.goto(-300, -100)
+t.end_fill()
+
+# draw the sun
+t.penup()
+t.goto(-200, 200)
+t.pendown()
+t.color("yellow")
+t.begin_fill()
+t.circle(50)
+t.end_fill()
+
+# draw a tree
+t.penup()
+t.goto(100, -100)
+t.pendown()
+t.color("brown")
+t.begin_fill()
+t.goto(130, -100)
+t.goto(130, -50)
+t.goto(100, -50)
+t.goto(100, -100)
+t.end_fill()
+t.color("green")
+t.begin_fill()
+t.penup()
+t.goto(80, -50)
+t.pendown()
+t.circle(30)
+t.end_fill()
+
+# draw a house
+t.penup()
+t.goto(-100, -100)
+t.pendown()
+t.color("orange")
+t.begin_fill()
+t.goto(100, -100)
+t.goto(100, 0)
+t.goto(-100, 0)
+t.goto(-100, -100)
+t.end_fill()
+
+# draw the roof
+t.color("red")
+t.begin_fill()
+t.penup()
+t.goto(-120, 0)
+t.pendown()
+t.goto(120, 0)
+t.goto(0, 80)
+t.goto(-120, 0)
+t.end_fill()
+
+# draw the window
+t.color("white")
+t.begin_fill()
+t.penup()
+t.goto(-40, -60)
+t.pendown()
+t.goto(40, -60)
+t.goto(40, -20)
+t.goto(-40, -20)
+t.goto(-40, -60)
+t.end_fill()
+
+# hide the turtle
+t.hideturtle()
+
+# keep the window open
+turtle.mainloop()
